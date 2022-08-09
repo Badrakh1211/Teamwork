@@ -57,13 +57,37 @@
     display: block ;
   }
   .names {
-    margin-left: -60% ; 
     transition: 400ms ;
-  }
+    line-height:3;
+    font-size: 30px;
+    display: none;
+}
   .ham:hover + .names {
     display: block ;
     margin-left: 60% ;
   }
 .lines {
   display:none;
+}
+
+@keyframes Anime{
+  0%   {background-color:red; left:0px; }
+  25%  {background-color:yellow; left:200px; }
+  50%  {background-color:blue; left:200px; }
+  75%  {background-color:green; left:0px; }
+  100% {background-color:red; left:0px; }
+}
+@keyframes ANime {
+
+0%   {background-color:brown; left:0px;}
+25%  {background-color:yellow; left:200px;}
+50%  {background-color:blue; left:200px;}
+75%  {background-color:green; left:0px; }
+100% {background-color:brown; left:0px;}
+}
+.names {
+background-color: brown;
+position: relative;
+animation-name: example;
+animation-duration: 4s;
 }
