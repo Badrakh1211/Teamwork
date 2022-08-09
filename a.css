@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex ;
+    background-color: brown ;
+    width: 30vh ;
+    height: 100vh ;
+  }
+  .ham {
+    width: 100px ;
+    height: 100px ;
+    margin-top: 10%;
+  }
+  .line {
+    display: flex ; 
+    margin-left: 50% ;
+    width: 40px ;
+    height: 5px  ;
+    background-color : white ;  
+    flex-direction: column ;
+    margin-top: 10px ;
+    margin-left: 30px ;
+  }
+  .ham:hover :first-child {
+    transform: rotate( 45deg );
+    transform-origin: 0% 0% ;
+    margin-left: 35px ; 
+    transition: 400ms ;
+  }
+  .ham:hover :nth-child(2) {
+    display: none ;
+    transition: 400ms ;
+  }
+  .ham:hover :last-child {
+    transform: rotate( -45deg );
+    transform-origin: 0% 0% ;
+    margin-top: 23px ;
+    transition: 400ms ; 
+  }
+  .text{
+    display: flex ;
+    flex-direction: column ;
+    margin-top: 25% ;
+    gap: 20px ;
+    display: none ;
+  }
+  .names {
+    color: white ;
+    font-size: 25px ;
+  }
+  .ham:hover + .text {
+    display: block ;
+  }
+  .names {
+    margin-left: -60% ; 
+    transition: 400ms ;
+  }
+  .ham:hover + .names {
+    display: block ;
+    margin-left: 60% ;
+  }
