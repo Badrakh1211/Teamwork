@@ -9,6 +9,10 @@
     background-color: brown ;
     width: 30vh ;
     height: 100vh ;
+    cursor: pointer;
+  }
+  .container:hover + .text {
+    display: block;
   }
   .ham {
     width: 100px ;
