@@ -100,7 +100,7 @@
 background-color: brown;
 position: relative;
 animation-name: example;
-animation-duration: 5s;
+animation-duration: 2s;
 }
 @keyframes example{
   0%   {background-color:brown; left:-70px; }
@@ -122,7 +122,7 @@ animation-duration: 5s;
   background-color: brown;
   position: relative;
   animation-name: example;
-  animation-duration: 2s;
+  animation-duration: 1s;
   }
   @keyframes example{
     0%   {background-color:brown; left:-50px; }
